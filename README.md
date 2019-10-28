@@ -1,2 +1,1 @@
-# node-quick-start
-Boilerplate NodeJS projects
+# Boilerplate NodeJS projects

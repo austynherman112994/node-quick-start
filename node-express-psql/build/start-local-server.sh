@@ -1,0 +1,13 @@
+DB_USER= \
+DB_HOST=localhost \
+DB_PASSWORD= \
+DB_DATABASE= \
+DB_PORT= \
+DB_DIALECT=postgres \
+DB_POOL_MAX=5 \
+DB_POOL_MIN=0 \
+DB_POOL_ACQUIRE=30000 \
+DB_POOL_IDLE=10000 \
+PORT=8081 \
+LOGGING_LEVEL=debug \
+babel-watch ./src/server.js

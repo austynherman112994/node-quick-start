@@ -1,0 +1,40 @@
+{
+  "name": "node-express-psql",
+  "version": "1.0.0",
+  "description": "Example API using node, express, and psql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "bash ./build/start-local-server.sh"
+  },
+  "author": "Austyn Herman",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "eslint": "^5.11.1",
+    "eslint-config-google": "^0.11.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "jwks-rsa": "^1.6.0",
+    "method-override": "^3.0.0",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.44.2",
+    "winston": "^3.2.1"
+  }
+}

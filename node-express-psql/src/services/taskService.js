@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
-const {Project} = require('../models');
-const {Task} = require('../models');
+const {Project} = require('../factories');
+const {Task} = require('../factories');
 
 /**
  * Creates a Task in the database.

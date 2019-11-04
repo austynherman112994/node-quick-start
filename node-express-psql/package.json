@@ -4,7 +4,7 @@
   "description": "Example API using node, express, and psql",
   "main": "server.js",
   "scripts": {
-    "test": "mocha || true",
+    "test": "bash ./build/start-local-tests.sh || true",
     "local": "bash ./build/start-local-server.sh"
   },
   "author": "Austyn Herman",
@@ -23,9 +23,12 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-watch": "^2.0.7",
     "chai": "^4.2.0",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
     "eslint": "^5.11.1",
     "eslint-config-google": "^0.11.0",
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "sequelize-mock": "^0.10.2"
   },
   "dependencies": {
     "cors": "^2.8.5",

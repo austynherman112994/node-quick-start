@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
-const {Project} = require('../models');
-const {Task} = require('../models');
+const {Project} = require('../factories');
+const {Task} = require('../factories');
 const Op = Sequelize.Op;
 
 /**

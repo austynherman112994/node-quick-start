@@ -1,5 +1,5 @@
 DB_USER= \
-DB_HOST=localhost \
+DB_HOST= \
 DB_PASSWORD= \
 DB_DATABASE= \
 DB_PORT= \
@@ -10,5 +10,5 @@ DB_POOL_ACQUIRE=30000 \
 DB_POOL_IDLE=10000 \
 PORT=8081 \
 LOGGING_LEVEL=debug \
-NODE_ENV=local \
-babel-watch ./src/server.js
+NODE_ENV=test \
+mocha --recursive

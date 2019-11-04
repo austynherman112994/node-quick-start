@@ -1,2 +1,2 @@
-const {sequelize} = require('../models');
+const {sequelize} = require('../factories');
 module.exports = sequelize;

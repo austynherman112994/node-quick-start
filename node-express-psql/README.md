@@ -74,6 +74,12 @@ Fetches Projects that are not 'Deleted' from the database.
 ```
 curl -X GET http://localhost:8081/tasks/active
 ```
+# Running Tests
+The API is set up to run unit tests using the following commands
+```
+$cd node-express-psql
+$npm run test
+```
 
 # Architecture
 
@@ -82,6 +88,7 @@ curl -X GET http://localhost:8081/tasks/active
 - models - Contains the [Sequelize] ORM Models for interacting with the database.
 - services - Contain the core logic for interacting with models and the databases. Note: The "services" do not take in the request/response objects from the route. The services should have a set and defined list of parameters that it requires. Defining services this way will improve testability by preventing the need to mock requests and responses in unit tests.
 - routes - The routes defined in the API. The routes are broken up based on the responsibility of the route. Breaking up the routes will help with readability as the number of routes increases.
+- factories - Used to determine which database models should be loaded. Mock models are loaded for unit tests.
 
 #### Database
 For this API Quickstart, Postgres was chosen as the desired database solution. There are many other viable database solutions both relational and non-relational. It is beyond the scope of this Quickstart to discuss the advantages and disadvantages of different database solutions. That said, Postgres is a great relational database solution.
@@ -93,6 +100,9 @@ The API relies on a number of technologies. The primary technologies are:
 * [Sequelize] - ORM for interfacing with the database. Some developers do not like the large amount of abstraction an ORM, like Sequelize, provides. Sequelize offers a strong set of features that can make getting up and running very simple. However, the queries are highly abstracted and Sequelize requires *Sequelize* specific knowledge. It is worth looking at a mid-level query builder solution like the popular [KnexJS]. It offers a strong feature set with less abstraction...
 * [Winston] - Logger (Not leveraged nearly enough here, but it is set up for use.)
 * [ESlint] - Code linter for keeping the code clean and consistent.
+* [Mocha] - Unit test framework.
+* [Chai] - Assertion library for unit tests.
+* [Sequelize-Mock] - Sequelize Mock is used to mock the database objects for unit tests. NOTE: The setup for Sequelize-Mock varies from the documentation. Factories have been used in this project to import the mock objects rather than overriding the import.
 
    [KnexJS]: <http://knexjs.org/>
    [Winston]: <https://github.com/winstonjs/winston>
@@ -102,3 +112,6 @@ The API relies on a number of technologies. The primary technologies are:
    [postgress-mac]: <https://postgresapp.com>
    [Sequelize]: <https://sequelize.org/>
    [ESlint]: <https://eslint.org/>
+   [Mocha]: <https://mochajs.org/>
+   [Chai]: <https://www.chaijs.com/>
+   [Sequelize-Mock]: <https://sequelize-mock.readthedocs.io/en/stable/>

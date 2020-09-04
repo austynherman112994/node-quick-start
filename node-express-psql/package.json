@@ -39,7 +39,7 @@
     "method-override": "^3.0.0",
     "pg": "^7.7.1",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.44.2",
+    "sequelize": "^5.15.1",
     "winston": "^3.2.1"
   }
 }

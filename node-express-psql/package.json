@@ -35,7 +35,7 @@
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "jwks-rsa": "^1.6.0",
+    "jwks-rsa": "^3.0.0",
     "method-override": "^3.0.0",
     "pg": "^7.7.1",
     "pg-hstore": "^2.3.2",

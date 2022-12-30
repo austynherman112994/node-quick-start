@@ -27,7 +27,7 @@
     "chai-things": "^0.2.0",
     "eslint": "^5.11.1",
     "eslint-config-google": "^0.11.0",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "sequelize-mock": "^0.10.2"
   },
   "dependencies": {
